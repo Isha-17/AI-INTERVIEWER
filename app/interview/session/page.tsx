@@ -75,15 +75,25 @@ export default function InterviewSessionPage() {
           })
         })
         
-        if (!response.ok) throw new Error("Failed to evaluate interview")
+        const data = await response.json()
         
-        const result: InterviewResult = await response.json()
+        // Check if response contains an error
+        if (!response.ok || data.error) {
+          const errorMessage = data.error || "Failed to evaluate interview"
+          const errorDetails = data.details || ""
+          console.error("[v0] API Error:", errorMessage, errorDetails)
+          alert(`${errorMessage}${errorDetails ? `\n\nDetails: ${errorDetails}` : ""}`)
+          setIsSubmitting(false)
+          return
+        }
+        
+        const result: InterviewResult = data
         setResult(result)
         
         router.push("/interview/results")
       } catch (error) {
         console.error("[v0] Failed to evaluate interview:", error)
-        alert("Failed to evaluate your interview. Please try again.")
+        alert("Failed to evaluate your interview. Please check your connection and try again.")
         setIsSubmitting(false)
       }
     } else {

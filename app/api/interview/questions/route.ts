@@ -1,4 +1,4 @@
-import { generateText, Output } from "ai"
+import { generateObject } from "ai"
 import { createGroq } from "@ai-sdk/groq"
 import { z } from "zod"
 import type { InterviewConfig, InterviewQuestion } from "@/lib/interview-types"
@@ -110,10 +110,10 @@ EXAMPLE OF HIGH-QUALITY QUESTIONS:
 
 Generate questions that would impress senior leadership and accurately assess candidates for this role.`
 
-    const result = await generateText({
+    const result = await generateObject({
       model: groq("llama-3.3-70b-versatile"),
       prompt,
-      output: Output.object({ schema: questionsSchema })
+      schema: questionsSchema
     })
 
     const questions = result.object?.questions || generateFallbackQuestions(questionCount, type, difficulty)

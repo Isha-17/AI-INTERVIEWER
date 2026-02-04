@@ -15,25 +15,50 @@ export function Header() {
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
             <svg
-              width="48"
-              height="20"
-              viewBox="0 0 48 20"
+              width="60"
+              height="24"
+              viewBox="0 0 60 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="text-white"
             >
-              <path
-                d="M0 0H6.5V2H2V8H6.5V10H2V18H6.5V20H0V0ZM8.5 0H15V2H10.5V8H15V10H10.5V18H15V20H8.5V0Z"
-                fill="currentColor"
-              />
-              <path
-                d="M17 0H23.5C26.5 0 28.5 2 28.5 5V5.5C28.5 7.5 27.5 9 25.5 9.5C27.5 10 29 11.5 29 14V15C29 18 27 20 24 20H17V0ZM23 8C24.5 8 25.5 7 25.5 5.5V5C25.5 3.5 24.5 2 23 2H20V8H23ZM23.5 18C25 18 26 17 26 15V14.5C26 13 25 11 23 11H20V18H23.5Z"
-                fill="currentColor"
-              />
-              <path
-                d="M31 0H34.5L38.5 14.5L42.5 0H46L48 20H45L43.5 6L39.5 20H37.5L33.5 6L32 20H29L31 0Z"
-                fill="currentColor"
-              />
+              {/* I */}
+              <rect x="0" y="0" width="12" height="3" fill="currentColor"/>
+              <rect x="3" y="3" width="6" height="3" fill="currentColor"/>
+              <rect x="3" y="6" width="6" height="3" fill="currentColor"/>
+              <rect x="0" y="9" width="12" height="3" fill="currentColor"/>
+              <rect x="3" y="12" width="6" height="3" fill="currentColor"/>
+              <rect x="3" y="15" width="6" height="3" fill="currentColor"/>
+              <rect x="0" y="18" width="12" height="3" fill="currentColor"/>
+              <rect x="0" y="21" width="12" height="3" fill="currentColor"/>
+              {/* B */}
+              <rect x="16" y="0" width="18" height="3" fill="currentColor"/>
+              <rect x="16" y="3" width="18" height="3" fill="currentColor"/>
+              <rect x="19" y="6" width="6" height="3" fill="currentColor"/>
+              <rect x="28" y="6" width="6" height="3" fill="currentColor"/>
+              <rect x="19" y="9" width="12" height="3" fill="currentColor"/>
+              <rect x="19" y="12" width="12" height="3" fill="currentColor"/>
+              <rect x="19" y="15" width="6" height="3" fill="currentColor"/>
+              <rect x="28" y="15" width="6" height="3" fill="currentColor"/>
+              <rect x="16" y="18" width="18" height="3" fill="currentColor"/>
+              <rect x="16" y="21" width="18" height="3" fill="currentColor"/>
+              {/* M */}
+              <rect x="38" y="0" width="22" height="3" fill="currentColor"/>
+              <rect x="38" y="3" width="22" height="3" fill="currentColor"/>
+              <rect x="38" y="6" width="6" height="3" fill="currentColor"/>
+              <rect x="46" y="6" width="6" height="3" fill="currentColor"/>
+              <rect x="54" y="6" width="6" height="3" fill="currentColor"/>
+              <rect x="38" y="9" width="6" height="3" fill="currentColor"/>
+              <rect x="46" y="9" width="6" height="3" fill="currentColor"/>
+              <rect x="54" y="9" width="6" height="3" fill="currentColor"/>
+              <rect x="38" y="12" width="6" height="3" fill="currentColor"/>
+              <rect x="54" y="12" width="6" height="3" fill="currentColor"/>
+              <rect x="38" y="15" width="6" height="3" fill="currentColor"/>
+              <rect x="54" y="15" width="6" height="3" fill="currentColor"/>
+              <rect x="38" y="18" width="6" height="3" fill="currentColor"/>
+              <rect x="54" y="18" width="6" height="3" fill="currentColor"/>
+              <rect x="38" y="21" width="6" height="3" fill="currentColor"/>
+              <rect x="54" y="21" width="6" height="3" fill="currentColor"/>
             </svg>
             <span className="text-sm font-medium hidden sm:inline">Watson Interview AI</span>
           </Link>
