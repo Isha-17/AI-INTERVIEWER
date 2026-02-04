@@ -14,52 +14,7 @@ export function Header() {
         {/* Logo & Brand */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
-            <svg
-              width="60"
-              height="24"
-              viewBox="0 0 60 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-white"
-            >
-              {/* I */}
-              <rect x="0" y="0" width="12" height="3" fill="currentColor"/>
-              <rect x="3" y="3" width="6" height="3" fill="currentColor"/>
-              <rect x="3" y="6" width="6" height="3" fill="currentColor"/>
-              <rect x="0" y="9" width="12" height="3" fill="currentColor"/>
-              <rect x="3" y="12" width="6" height="3" fill="currentColor"/>
-              <rect x="3" y="15" width="6" height="3" fill="currentColor"/>
-              <rect x="0" y="18" width="12" height="3" fill="currentColor"/>
-              <rect x="0" y="21" width="12" height="3" fill="currentColor"/>
-              {/* B */}
-              <rect x="16" y="0" width="18" height="3" fill="currentColor"/>
-              <rect x="16" y="3" width="18" height="3" fill="currentColor"/>
-              <rect x="19" y="6" width="6" height="3" fill="currentColor"/>
-              <rect x="28" y="6" width="6" height="3" fill="currentColor"/>
-              <rect x="19" y="9" width="12" height="3" fill="currentColor"/>
-              <rect x="19" y="12" width="12" height="3" fill="currentColor"/>
-              <rect x="19" y="15" width="6" height="3" fill="currentColor"/>
-              <rect x="28" y="15" width="6" height="3" fill="currentColor"/>
-              <rect x="16" y="18" width="18" height="3" fill="currentColor"/>
-              <rect x="16" y="21" width="18" height="3" fill="currentColor"/>
-              {/* M */}
-              <rect x="38" y="0" width="22" height="3" fill="currentColor"/>
-              <rect x="38" y="3" width="22" height="3" fill="currentColor"/>
-              <rect x="38" y="6" width="6" height="3" fill="currentColor"/>
-              <rect x="46" y="6" width="6" height="3" fill="currentColor"/>
-              <rect x="54" y="6" width="6" height="3" fill="currentColor"/>
-              <rect x="38" y="9" width="6" height="3" fill="currentColor"/>
-              <rect x="46" y="9" width="6" height="3" fill="currentColor"/>
-              <rect x="54" y="9" width="6" height="3" fill="currentColor"/>
-              <rect x="38" y="12" width="6" height="3" fill="currentColor"/>
-              <rect x="54" y="12" width="6" height="3" fill="currentColor"/>
-              <rect x="38" y="15" width="6" height="3" fill="currentColor"/>
-              <rect x="54" y="15" width="6" height="3" fill="currentColor"/>
-              <rect x="38" y="18" width="6" height="3" fill="currentColor"/>
-              <rect x="54" y="18" width="6" height="3" fill="currentColor"/>
-              <rect x="38" y="21" width="6" height="3" fill="currentColor"/>
-              <rect x="54" y="21" width="6" height="3" fill="currentColor"/>
-            </svg>
+            <span className="text-xl font-bold tracking-tight">IBM</span>
             <span className="text-sm font-medium hidden sm:inline">Watson Interview AI</span>
           </Link>
         </div>
