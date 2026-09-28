@@ -1,61 +1,65 @@
-# AI Interviewer
+SkillUp Ace
+AI-Powered Interview Readiness Platform
 
-An intelligent, interactive AI-powered interview platform powered by **IBM Bob**. This application simulates real-time interview scenarios, evaluates user responses, and provides actionable feedback to help candidates hone their interview skills.
+SkillUp Ace is an AI-powered interview preparation platform that helps users practice role-specific interviews, simulate real interview sessions, and receive structured performance feedback.
 
----
+Key Features
+Role and company-specific interview generation
+AI-powered dynamic questions
+Realistic interview simulation
+Automated performance analysis
+Interview history and session tracking
+Local session storage with support for up to 50 sessions
+Responsive and modern user interface
+How It Works
+Configure Interview
+        ↓
+Generate Questions
+        ↓
+Simulate Interview
+        ↓
+Analyse Performance
+        ↓
+Save & Review History
+Technology Stack
+Frontend: Next.js, React, TypeScript
+UI: Tailwind CSS, shadcn/ui, Radix UI
+AI: Groq API + Llama
+Validation: Zod, React Hook Form
+Analytics: Recharts
+Storage: Browser localStorage
+IBM Bob Integration
 
-## 🌟 Powered by IBM Bob
+IBM Bob was used as an AI-powered development partner throughout the project for:
 
-This project is deeply integrated with **IBM Bob**, leveraging its advanced reasoning and conversational AI capabilities to deliver realistic and adaptive interview interactions:
+Codebase analysis
+Architecture planning
+Feature implementation
+Refactoring
+Debugging
+Documentation
 
-- **Dynamic Question Generation:** Utilizes IBM Bob to generate domain-specific, contextual follow-up questions tailored to candidate responses.
-- **Real-Time Response Evaluation:** Employs IBM Bob's cognitive models to analyze answer structure, technical depth, and soft-skill nuance.
-- **Personalized Feedback Engine:** Generates instant, constructive feedback report summaries after each practice session.
+The application itself uses Groq API with Llama models for its AI functionality.
 
----
+No IBM Watson API is used in the application.
 
-## ✨ Features
+Interview History
 
-- 🎯 **Tailored Interview Tracks:** Support for various roles and technical skill levels.
-- 💬 **Interactive Conversation Flow:** Natural back-and-forth dialogue powered by state-of-the-art LLM orchestration.
-- 📊 **Performance Analytics:** Comprehensive feedback highlighting strengths and key areas for improvement.
-- ⚡ **Modern Stack:** Built for performance, responsiveness, and seamless UI interactions.
+Completed interviews are stored locally and can be:
 
----
+Viewed from the History page
+Opened individually
+Deleted
+Cleared when required
 
-## 🛠️ Tech Stack
+The implementation uses a reusable results component and centralized history-storage utility.
 
-- **AI Core:** IBM Bob
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS / shadcn/ui
-- **Language:** TypeScript
-- **Deployment:** Vercel
+Team
 
----
+Team SkillWire
 
-## 🚀 Getting Started
+Isha Sonawane
+Aqsa Waikar
+Project Status
 
-### Prerequisites
-
-Ensure you have Node.js (v18+) and npm/pnpm installed.
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Isha-17/AI-INTERVIEWER.git](https://github.com/Isha-17/AI-INTERVIEWER.git)
-   cd AI-INTERVIEWER
-
-Install dependencies:
-
-Bash
-npm install
-Set up environment variables:
-Create a .env.local file in the root directory and add your API credentials:
-
-Code snippet
-IBM_BOB_API_KEY=your_ibm_bob_api_key
-Run the development server:
-
-Bash
-npm run dev
+The core interview workflow and local interview-history functionality have been implemented.
