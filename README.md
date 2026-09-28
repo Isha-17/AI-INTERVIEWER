@@ -1,30 +1,47 @@
-# HR interview simulator (2)
+# AI Interviewer
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+An intelligent, interactive AI-powered interview platform powered by **IBM Bob**. This application simulates real-time interview scenarios, evaluates user responses, and provides actionable feedback to help candidates hone their interview skills.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/cloudwhisperdemo-4632s-projects/v0-hr-interview-simulator-fh)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/nR839Oerhpi)
+---
 
-## Overview
+## 🌟 Powered by IBM Bob
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+This project is deeply integrated with **IBM Bob**, leveraging its advanced reasoning and conversational AI capabilities to deliver realistic and adaptive interview interactions:
 
-## Deployment
+- **Dynamic Question Generation:** Utilizes IBM Bob to generate domain-specific, contextual follow-up questions tailored to candidate responses.
+- **Real-Time Response Evaluation:** Employs IBM Bob's cognitive models to analyze answer structure, technical depth, and soft-skill nuance.
+- **Personalized Feedback Engine:** Generates instant, constructive feedback report summaries after each practice session.
 
-Your project is live at:
+---
 
-**[https://vercel.com/cloudwhisperdemo-4632s-projects/v0-hr-interview-simulator-fh](https://vercel.com/cloudwhisperdemo-4632s-projects/v0-hr-interview-simulator-fh)**
+## ✨ Features
 
-## Build your app
+- 🎯 **Tailored Interview Tracks:** Support for various roles and technical skill levels.
+- 💬 **Interactive Conversation Flow:** Natural back-and-forth dialogue powered by state-of-the-art LLM orchestration.
+- 📊 **Performance Analytics:** Comprehensive feedback highlighting strengths and key areas for improvement.
+- ⚡ **Modern Stack:** Built for performance, responsiveness, and seamless UI interactions.
 
-Continue building your app on:
+---
 
-**[https://v0.app/chat/nR839Oerhpi](https://v0.app/chat/nR839Oerhpi)**
+## 🛠️ Tech Stack
 
-## How It Works
+- **AI Core:** IBM Bob
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS / shadcn/ui
+- **Language:** TypeScript
+- **Deployment:** Vercel
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have Node.js (v18+) and npm/pnpm installed.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Isha-17/AI-INTERVIEWER.git](https://github.com/Isha-17/AI-INTERVIEWER.git)
+   cd AI-INTERVIEWER
