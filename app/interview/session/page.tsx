@@ -8,6 +8,7 @@ import { TextInterview } from "@/components/interview/text-interview"
 import { VoiceInterview } from "@/components/interview/voice-interview"
 import { Loader2, Clock, MessageSquare, Mic, Briefcase, Building2 } from "lucide-react"
 import type { UserAnswer, InterviewResult } from "@/lib/interview-types"
+import { saveSession } from "@/lib/history-storage"
 
 export default function InterviewSessionPage() {
   const router = useRouter()
@@ -79,7 +80,11 @@ export default function InterviewSessionPage() {
         
         const result: InterviewResult = await response.json()
         setResult(result)
-        
+        try {
+          saveSession(result)
+        } catch {
+          console.error("[v0] Failed to save session to history")
+        }
         router.push("/interview/results")
       } catch (error) {
         console.error("[v0] Failed to evaluate interview:", error)

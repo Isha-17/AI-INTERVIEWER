@@ -54,10 +54,10 @@ export function Header() {
             Interview
           </Link>
           <Link
-            href="/results"
+            href="/history"
             className="px-4 py-3 text-sm hover:bg-[#393939] transition-colors"
           >
-            Results
+            History
           </Link>
         </nav>
 
@@ -100,11 +100,11 @@ export function Header() {
             Interview
           </Link>
           <Link
-            href="/results"
+            href="/history"
             className="block px-4 py-3 text-sm hover:bg-[#393939] transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Results
+            History
           </Link>
         </nav>
       )}
