@@ -45,3 +45,17 @@ Ensure you have Node.js (v18+) and npm/pnpm installed.
    ```bash
    git clone [https://github.com/Isha-17/AI-INTERVIEWER.git](https://github.com/Isha-17/AI-INTERVIEWER.git)
    cd AI-INTERVIEWER
+
+Install dependencies:
+
+Bash
+npm install
+Set up environment variables:
+Create a .env.local file in the root directory and add your API credentials:
+
+Code snippet
+IBM_BOB_API_KEY=your_ibm_bob_api_key
+Run the development server:
+
+Bash
+npm run dev
